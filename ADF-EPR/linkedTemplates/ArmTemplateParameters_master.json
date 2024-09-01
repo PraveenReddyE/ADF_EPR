@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADF-EPR"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase_linkedservice_password": {
+			"value": ""
+		},
+		"EPRlinkedservice_accountKey": {
+			"value": ""
+		},
+		"SQL_TargetDB_LS_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase_linkedservice_properties_typeProperties_server": {
+			"value": "eprsqlservernew.database.windows.net"
+		},
+		"AzureSqlDatabase_linkedservice_properties_typeProperties_database": {
+			"value": "eprdatabase"
+		},
+		"AzureSqlDatabase_linkedservice_properties_typeProperties_userName": {
+			"value": "Praveene"
+		},
+		"EPRlinkedservice_properties_typeProperties_url": {
+			"value": "https://epradlsgen2.dfs.core.windows.net"
+		},
+		"RestApi_LS_properties_typeProperties_url": {
+			"value": "https://reqres.in/api/users"
+		},
+		"SQL_TargetDB_LS_properties_typeProperties_server": {
+			"value": "eprsqlservernew.database.windows.net"
+		},
+		"SQL_TargetDB_LS_properties_typeProperties_database": {
+			"value": "Target_DB"
+		},
+		"SQL_TargetDB_LS_properties_typeProperties_userName": {
+			"value": "Praveene"
+		},
+		"TumblingWindow_trigger_properties_pipeline_parameters_StartDate": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"TumblingWindow_trigger_properties_pipeline_parameters_EndDate": {
+			"value": "@trigger().outputs.windowEndTime"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
