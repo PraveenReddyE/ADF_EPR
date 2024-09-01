@@ -1,0 +1,17 @@
+{
+	"name": "SQL_TargetDB_LS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "eprsqlservernew.database.windows.net",
+			"database": "Target_DB",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "Praveene",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDI5NEU1MzBCLTBFNTMtNDY5Qy04NDZDLTcwQTc1OTQ3M0MzQl8zZWFkYTg3Yi0zZDA2LTQ1NzctYTE5MC0zYWE5NWQwYmRjNTgiDQp9"
+		}
+	}
+}

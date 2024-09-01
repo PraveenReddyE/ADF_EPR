@@ -1,0 +1,25 @@
+{
+	"name": "Scheduled_trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "EPR-Pipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 5,
+				"startTime": "2024-08-30T19:02:00",
+				"endTime": "2024-08-30T19:09:04",
+				"timeZone": "Eastern Standard Time"
+			}
+		}
+	}
+}

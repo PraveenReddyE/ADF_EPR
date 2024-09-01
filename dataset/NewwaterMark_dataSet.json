@@ -1,0 +1,13 @@
+{
+	"name": "NewwaterMark_dataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase_linkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

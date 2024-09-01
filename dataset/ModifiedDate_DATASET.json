@@ -1,0 +1,24 @@
+{
+	"name": "ModifiedDate_DATASET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EPRlinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "TargetLatest",
+				"fileSystem": "targetfile"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

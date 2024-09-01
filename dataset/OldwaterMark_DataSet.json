@@ -1,0 +1,17 @@
+{
+	"name": "OldwaterMark_DataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase_linkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "watermarktable"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

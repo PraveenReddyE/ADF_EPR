@@ -1,0 +1,24 @@
+{
+	"name": "SizeBasedTargetDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EPRlinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "TargetLatest2",
+				"fileSystem": "targetfile"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

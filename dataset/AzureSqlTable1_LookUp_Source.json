@@ -1,0 +1,13 @@
+{
+	"name": "AzureSqlTable1_LookUp_Source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase_linkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

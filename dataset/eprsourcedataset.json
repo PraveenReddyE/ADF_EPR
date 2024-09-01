@@ -1,0 +1,25 @@
+{
+	"name": "eprsourcedataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EPRlinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "customershealth.csv",
+				"folderPath": "EMPfile2/Soure",
+				"fileSystem": "eprgen2container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,33 @@
+{
+	"name": "TargetEXCELINDEX",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EPRlinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TargetName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().TargetName",
+					"type": "Expression"
+				},
+				"folderPath": "TargetLatest",
+				"fileSystem": "targetfile"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

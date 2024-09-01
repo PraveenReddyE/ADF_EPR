@@ -1,0 +1,9 @@
+{
+	"name": "ADF-EPR",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bffc0bae-3f07-4a60-8f18-6b3fc42ace90",
+		"tenantId": "e3585ca4-0d71-4067-b517-2bb1b50c1a90"
+	}
+}

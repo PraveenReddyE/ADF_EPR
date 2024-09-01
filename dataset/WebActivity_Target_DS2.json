@@ -1,0 +1,25 @@
+{
+	"name": "WebActivity_Target_DS2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EPRlinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "webActivity.json",
+				"folderPath": "WebActivityoutput2",
+				"fileSystem": "targetfile"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "",
+			"firstRowAsHeader": false,
+			"quoteChar": ""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
